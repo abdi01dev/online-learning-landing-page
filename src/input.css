@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Debuging */
+body.debug * {
+  outline: 1px solid red;
+}
+
+.xx {
+  outline: 1px solid red;
+}
+
+.xx * {
+  outline: 1px solid red;
+}
+
+.xr {
+  outline: 1px solid red;
+}
+
+.xg {
+  outline: 1px solid green;
+}
+
+.xb {
+  outline: 1px solid blue;
+}
