@@ -26,3 +26,28 @@ body.debug * {
 .xb {
   outline: 1px solid blue;
 }
+
+/* Navbar */
+.navbar__extra {
+  transform: translateY(calc(-100% - 8px));
+}
+
+.navbar__extra.active {
+  @apply translate-y-0 transition duration-300 ease-in-out;
+}
+
+.hamburger__line {
+  @apply block h-[3px] w-full rounded-[10px] bg-slate-800 transition;
+}
+
+#hamburger-toggle.active span:nth-child(1) {
+  @apply -rotate-45 transition;
+}
+
+#hamburger-toggle.active span:nth-child(2) {
+  @apply opacity-0 transition;
+}
+
+#hamburger-toggle.active span:nth-child(3) {
+  @apply rotate-45 transition;
+}
