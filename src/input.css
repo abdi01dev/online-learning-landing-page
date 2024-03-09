@@ -51,3 +51,9 @@ body.debug * {
 #hamburger-toggle.active span:nth-child(3) {
   @apply rotate-45 transition;
 }
+
+/* Hero */
+#hero-section {
+  border-bottom-left-radius: 80% 10%;
+  border-bottom-right-radius: 80% 10%;
+}
