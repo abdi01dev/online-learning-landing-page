@@ -56,17 +56,14 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section id="hero-section" class="flex h-dvh items-center bg-[#FFF2E1] pt-14">
-      <div class="container mx-auto flex flex-col-reverse gap-y-8 px-4">
+    <section id="hero-section" class="flex min-h-dvh items-center bg-[#FFF2E1] pt-14">
+      <div class="container mx-auto flex flex-col-reverse px-4">
         <div class="">
           <h1 class="text-3xl font-bold text-[#2F327D]">
             <span class="text-[#F48C06]">Studying</span> Online is now <br />
             much easier
           </h1>
-          <p class="font-nunito mt-4 text-[#464646]">
-            Skilline is an interesting platform that will teach <br />
-            you in more an interactive way
-          </p>
+          <p class="mt-4 font-nunito text-lg text-[#464646]">Skilline is an interesting platform that will teach you in more an interactive way</p>
           <div class="mt-6 flex w-max flex-col items-start gap-y-4">
             <button class="rounded-full bg-[#F48C06] px-6 py-3 font-poppins font-semibold text-white">Join for free</button>
             <div class="flex items-center gap-x-4">
@@ -79,8 +76,75 @@
             </div>
           </div>
         </div>
-        <div class="">
-          <img src="dist/img/hero-image.png" alt="" />
+        <div class="relative">
+          <img src="dist/img/header-pic.png" alt="" />
+
+          <!-- <img class="" src="dist/img/hero-image.png" alt="" />
+
+          <div class="absolute -left-[60px] top-0 flex h-[100px] w-[300px] scale-[.4] gap-x-8 rounded-[10px] bg-white/80 px-[28px] py-[25px] backdrop-blur-[20px]">
+            <svg class="h-14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <rect width="50" height="50" fill="#23BDEE" rx="8" />
+              <g clip-path="url(#a)">
+                <path fill="#fff" d="M18.125 11.25a.982.982 0 0 0-.982.982v1.964h1.964v-1.964a.982.982 0 0 0-.982-.982Zm13.75 0a.982.982 0 0 0-.982.982v1.964h1.964v-1.964a.982.982 0 0 0-.982-.982Zm3.929 2.946h-2.947v3.929a.982.982 0 1 1-1.964 0v-3.929H19.107v3.929a.982.982 0 1 1-1.964 0v-3.929h-2.947a2.946 2.946 0 0 0-2.946 2.947v18.66a2.946 2.946 0 0 0 2.946 2.947h21.608a2.946 2.946 0 0 0 2.946-2.946V17.143a2.946 2.946 0 0 0-2.946-2.947Zm.982 21.608c0 .542-.44.982-.983.982H14.197a.982.982 0 0 1-.982-.982V23.036h23.572v12.768Z" />
+                <path fill="#fff" d="M19.107 25h-1.964a.982.982 0 0 0 0 1.964h1.964a.982.982 0 1 0 0-1.964Zm6.875 0h-1.964a.982.982 0 1 0 0 1.964h1.964a.982.982 0 1 0 0-1.964Zm6.875 0h-1.964a.982.982 0 0 0 0 1.964h1.964a.982.982 0 1 0 0-1.964Zm-13.75 3.929h-1.964a.982.982 0 1 0 0 1.964h1.964a.982.982 0 0 0 0-1.964Zm6.875 0h-1.964a.982.982 0 1 0 0 1.964h1.964a.982.982 0 1 0 0-1.964Zm6.875 0h-1.964a.982.982 0 1 0 0 1.964h1.964a.982.982 0 0 0 0-1.964Zm-13.75 3.928h-1.964a.982.982 0 0 0 0 1.964h1.964a.982.982 0 0 0 0-1.964Zm6.875 0h-1.964a.982.982 0 1 0 0 1.964h1.964a.982.982 0 1 0 0-1.964Zm6.875 0h-1.964a.982.982 0 0 0 0 1.964h1.964a.982.982 0 1 0 0-1.964Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M11.25 11.25h27.5v27.5h-27.5z" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="font-nunito">
+              <p class="text-2xl font-bold text-[#595959]">250k</p>
+              <p class="text=[#545567] text-xl font-semibold">Assited Student</p>
+            </div>
+          </div>
+
+          <div class="absolute -left-24 top-[70px] flex w-max scale-[.4] gap-x-[22px] rounded-[20px] bg-white/80 px-7 pb-7 pt-5 backdrop-blur-[20px]">
+            <div class="relative size-14 shrink-0 after:absolute after:bottom-0 after:right-0 after:block after:size-[18px] after:rounded-full after:border-2 after:border-[#FBECD7] after:bg-[#2EBB5E]">
+              <img class="h-full w-full rounded-full" src="dist/img/hero-decor1.png" alt="" />
+            </div>
+            <div class="">
+              <p class="font-nunito text-2xl font-bold text-[#595959]">User Experience Class</p>
+              <p class="text-xl font-semibold text-[#545567]">Today at 12.00 PM</p>
+              <button class="mt-4 rounded-[80px] bg-[#D8587E] px-12 py-3 font-nunito text-xl font-bold text-white">Join Now</button>
+            </div>
+          </div>
+
+          <div class="absolute left-24 top-20 flex w-max scale-[.4] gap-x-6 rounded-[20px] bg-white/80 px-[26px] py-[30px] backdrop-blur-[20px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50">
+              <rect width="50" height="50" fill="#F88C3D" rx="8" />
+              <path fill="#fff" d="M38.928 14.286H11.072L25 25.759l14.086-11.441a.971.971 0 0 0-.157-.032Z" />
+              <path fill="#fff" d="M25.676 27.974a1.071 1.071 0 0 1-1.357 0L10 16.178v18.465c0 .592.48 1.071 1.071 1.071H38.93c.591 0 1.071-.48 1.071-1.071V16.336L25.676 27.974Z" />
+            </svg>
+            <div class="font-nunito">
+              <p class="text-2xl font-bold text-[#595959]">Congratulations</p>
+              <p class="text-xl font-semibold text-[#545567]">Your admission completed</p>
+            </div>
+            <svg class="absolute right-[26px] top-4" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+              <circle cx="10" cy="10" r="10" fill="#4EE381" />
+              <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M6 10.694 8.887 14 15 7" />
+            </svg>
+          </div>
+
+          <svg class="absolute right-10 top-6 size-[69px]" xmlns="http://www.w3.org/2000/svg" width="149" height="149" fill="none" viewBox="0 0 149 149">
+            <g filter="url(#a)">
+              <rect width="69" height="69" x="40" y="32" fill="#F3627C" rx="14" />
+            </g>
+            <rect width="47.3" height="44.85" x="51.35" y="44.075" fill="#fff" rx="8" />
+            <path stroke="#F25471" stroke-linecap="round" stroke-width="4" d="M74.5 54.425v24.15m-8.625-19.838v19.838m17.25-14.662v14.662" />
+            <defs>
+              <filter id="a" width="149" height="149" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                <feOffset dy="8" />
+                <feGaussianBlur stdDeviation="20" />
+                <feColorMatrix values="0 0 0 0 0.825 0 0 0 0 0.300438 0 0 0 0 0.396718 0 0 0 0.26 0" />
+                <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_22_14" />
+                <feBlend in="SourceGraphic" in2="effect1_dropShadow_22_14" result="shape" />
+              </filter>
+            </defs>
+          </svg> -->
         </div>
       </div>
     </section>
