@@ -57,3 +57,21 @@ body.debug * {
   border-bottom-left-radius: 80% 10%;
   border-bottom-right-radius: 80% 10%;
 }
+
+.hero-image {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #hero-section {
+    min-height: 95dvh;
+    border-bottom-left-radius: 1500px 150px;
+    border-bottom-right-radius: 1500px 150px;
+    overflow: hidden;
+  }
+}
