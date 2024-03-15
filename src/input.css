@@ -67,11 +67,33 @@ body.debug * {
   -ms-user-select: none;
 }
 
+.scroller__inner {
+  animation: scroller 5s linear infinite;
+  -webkit-animation: scroller 7s linear infinite;
+  column-gap: 32px;
+}
+
+@media screen and (width >= 839px) {
+  .scroller {
+    max-width: 839px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   #hero-section {
     min-height: 95dvh;
     border-bottom-left-radius: 1500px 150px;
     border-bottom-right-radius: 1500px 150px;
     overflow: hidden;
+  }
+}
+
+@keyframes scroller {
+  to {
+    transform: translateX(calc(-50% - 16px));
+    -webkit-transform: translateX(calc(-50% - 16px));
+    -moz-transform: translateX(calc(-50% - 16px));
+    -ms-transform: translateX(calc(-50% - 16px));
+    -o-transform: translateX(calc(-50% - 16px));
   }
 }
