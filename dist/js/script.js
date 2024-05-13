@@ -28,3 +28,19 @@ scrollerContent.forEach((item) => {
   const duplicatedItem = item.cloneNode(true);
   scrollerInner.appendChild(duplicatedItem);
 });
+
+window.addEventListener("resize", () => {
+  logoScrollerHandler();
+});
+
+window.addEventListener("load", () => {
+  logoScrollerHandler();
+});
+
+function logoScrollerHandler() {
+  if (window.innerWidth <= 1024) {
+    scrollerInner.setAttribute("data-animation", true);
+  } else {
+    scrollerInner.setAttribute("data-animation", false);
+  }
+}

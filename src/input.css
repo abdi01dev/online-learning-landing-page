@@ -67,14 +67,18 @@ body.debug * {
   -ms-user-select: none;
 }
 
-.scroller__inner {
+.scroller__inner[data-animation="true"] {
   animation: scroller 5s linear infinite;
   -webkit-animation: scroller 7s linear infinite;
   column-gap: 32px;
 }
 
-/* News */
+.scroller__inner,
+.scroller__inner[data-animation="false"] {
+  column-gap: 32px;
+}
 
+/* News */
 #news {
   margin-top: calc(6rem + (167px / 2));
 }
