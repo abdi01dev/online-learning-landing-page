@@ -78,6 +78,17 @@ body.debug * {
   column-gap: 32px;
 }
 
+#integrations .right {
+  min-height: calc(384px + (196px / 2));
+}
+
+#integrations .right .cards__wrapper {
+  width: calc(466px + 28px);
+  height: 520px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 /* News */
 #news {
   margin-top: calc(6rem + (167px / 2));
@@ -90,6 +101,67 @@ body.debug * {
 .news__wrapper .news__category:hover {
   transition: 200ms;
   background-color: #f0a62f;
+}
+
+.right {
+  position: relative;
+  overflow: hidden;
+}
+
+.right .cards__wrapper {
+  /* gap = padding right body */
+  gap: 16px;
+
+  /* height = imgHeight + cardBodyHeight / 2 */
+  height: 600px;
+
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.right .card__button {
+  position: absolute;
+
+  /* top = imgHeight / 2 */
+  top: calc(427px / 2);
+}
+
+.right button#previous {
+  transform: translate(-50%, -50%);
+}
+
+.right button#next {
+  transform: translate(50%, -50%);
+}
+
+/* desktop / lg / 1024px */
+@media screen and (min-width: 1024px) {
+  .right .cards__wrapper {
+    /* paddingLeft = buttonWidth / 2 */
+    padding-left: calc(56px / 2);
+    overflow: hidden;
+    width: calc(423px + 64px);
+  }
+
+  .right .testimonial__card {
+    /* width = card__body - left/right */
+    /* width: calc(423px + 32px); */
+    width: calc(423px + 64px);
+  }
+
+  .right .testimonial__card img {
+    margin: 0;
+  }
+
+  .right button#previous {
+    /* left: calc(56px / 2); */
+    left: calc(56px / 2) !important;
+  }
+
+  .right button#next {
+    left: 288px;
+    transform: translateY(-50%);
+  }
 }
 
 @media screen and (width >= 839px) {
