@@ -91,7 +91,7 @@ body.debug * {
 
 /* News */
 #news {
-  margin-top: calc(6rem + (167px / 2));
+  /* margin-top: calc(6rem + (167px / 2)); */
 }
 
 .news__wrapper .news__category {
@@ -113,7 +113,8 @@ body.debug * {
   gap: 16px;
 
   /* height = imgHeight + cardBodyHeight / 2 */
-  height: 600px;
+  /* height: 600px; */
+  height: calc(384px + 217px / 2 + 4px);
 
   overflow: hidden;
   scroll-behavior: smooth;

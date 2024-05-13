@@ -1580,7 +1580,7 @@ body.debug * {
 /* News */
 
 #news {
-  margin-top: calc(6rem + (167px / 2));
+  /* margin-top: calc(6rem + (167px / 2)); */
 }
 
 .news__wrapper .news__category {
@@ -1601,7 +1601,8 @@ body.debug * {
   /* gap = padding right body */
   gap: 16px;
   /* height = imgHeight + cardBodyHeight / 2 */
-  height: 600px;
+  /* height: 600px; */
+  height: calc(384px + 217px / 2 + 4px);
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -1987,6 +1988,11 @@ body.debug * {
     margin-right: 0px;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -2116,6 +2122,10 @@ body.debug * {
     text-align: left;
   }
 
+  .md\:text-center {
+    text-align: center;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2128,11 +2138,6 @@ body.debug * {
 
   .md\:text-lg {
     font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -2248,6 +2253,10 @@ body.debug * {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-center {
