@@ -114,7 +114,7 @@ body.debug * {
 
   /* height = imgHeight + cardBodyHeight / 2 */
   /* height: 600px; */
-  height: calc(384px + 217px / 2 + 4px);
+  height: calc(384px + 217px / 2 + 44px);
 
   overflow: hidden;
   scroll-behavior: smooth;
